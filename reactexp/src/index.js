@@ -4,10 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+function Hello(props) {
+  console.log(props);
+  return (
+    <div>
+      <h1>Welcome to {props.library}!</h1>
+      <p>{props.message}</p>
+      <p>{props.number} Props Total</p>
+      </div>
+  );  
+}
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Hello library="React" message="Have fun"
+  number={3} 
+  />,
   document.getElementById('root')
 );
 
