@@ -4,13 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-function Hello(props) {
-  console.log(props);
+function Hello({library, message, number}) {
+  //console.log(Object.keys(props));
   return (
     <div>
-      <h1>Welcome to {props.library}!</h1>
-      <p>{props.message}</p>
-      <p>{props.number} Props Total</p>
+      <h1>Welcome to {library}!</h1>
+      <p>{message}</p>
+      <p>{number} Props Total</p>
       </div>
   );  
 }
